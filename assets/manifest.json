@@ -10,5 +10,13 @@
     "cumulative_successful_inputs": 1360000017,
     "release_status": "not_published",
     "download_url": null
+  },
+  "historical_gmm_prior": {
+    "parameters": 94682262,
+    "training_step": 54825,
+    "successful_inputs": 3600001122,
+    "recorded_model_tensor_hash": "4783578957c54fe5c30383d7682269a1d9e473f6f41824629596b1a68d7c1b29",
+    "release_status": "not_published",
+    "download_url": null
   }
 }

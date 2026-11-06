@@ -1,0 +1,209 @@
+{
+  "recorded_date": "2026-10-26",
+  "model_stage": "historical_gmm_autoregressive",
+  "training_step": 54825,
+  "successful_inputs": 3600001122,
+  "training_source_commit": "4b9b39df47902cf35516624c04e977a80b647aef",
+  "recorded_model_tensor_hash": "4783578957c54fe5c30383d7682269a1d9e473f6f41824629596b1a68d7c1b29",
+  "final_snapshot_metrics": {
+    "text": {
+      "content_nll": -161.90282720451083,
+      "shape_ce": 0.37206795576778773,
+      "shape_accuracy": 0.8797285213978788,
+      "first_accuracy": 0.7985796145932432,
+      "continuation_accuracy": 0.9866956126325671,
+      "space_accuracy": 0.98483644221455
+    },
+    "recognition": {
+      "count": 345,
+      "correct": 70,
+      "normalized_correct": 70
+    },
+    "recognition_anchor": {
+      "count": 32,
+      "correct": 2
+    },
+    "scene": {
+      "S1": {
+        "count": 24,
+        "class_precision": 0.21666666666666665,
+        "class_recall": 0.20833333333333334,
+        "position_word_recall": 0.7847222222222222,
+        "reference_exact_match": 0
+      },
+      "S3": {
+        "count": 96,
+        "correct": 41
+      },
+      "S5": {
+        "count": 96,
+        "correct": 12
+      },
+      "S2": {
+        "greedy": {
+          "count": 24,
+          "natural_end": 24,
+          "mean_box_hit_fraction": 0.923611111111111,
+          "mean_ink_inside_target_boxes": 0.5460892142621795
+        },
+        "sample": {
+          "count": 24,
+          "natural_end": 24,
+          "mean_box_hit_fraction": 0.8958333333333334,
+          "mean_ink_inside_target_boxes": 0.5022802652518
+        }
+      }
+    },
+    "localization": {
+      "correct": 37,
+      "center_mean": 0.20547640271897186,
+      "center_median": 0.26872442849335904,
+      "iou_mean": 0.35194139033054733,
+      "iou_median": 0.05437099364713159
+    }
+  },
+  "earlier_snapshot_metrics": {
+    "text": {
+      "content_nll": -146.28893731424677,
+      "shape_ce": 0.39353042782183534,
+      "shape_accuracy": 0.8735252477583766,
+      "first_accuracy": 0.7876833558264563,
+      "continuation_accuracy": 0.9860795329529286,
+      "space_accuracy": 0.9838739723305432
+    },
+    "recognition": {
+      "count": 345,
+      "correct": 60,
+      "normalized_correct": 60
+    },
+    "recognition_anchor": {
+      "count": 32,
+      "correct": 2
+    },
+    "scene": {
+      "S1": {
+        "count": 24,
+        "class_precision": 0.1875,
+        "class_recall": 0.1597222222222222,
+        "position_word_recall": 0.7013888888888888,
+        "reference_exact_match": 0
+      },
+      "S3": {
+        "count": 96,
+        "correct": 47
+      },
+      "S5": {
+        "count": 96,
+        "correct": 9
+      },
+      "S2": {
+        "greedy": {
+          "count": 24,
+          "natural_end": 24,
+          "mean_box_hit_fraction": 0.8993055555555555,
+          "mean_ink_inside_target_boxes": 0.5403659066075576
+        },
+        "sample": {
+          "count": 24,
+          "natural_end": 24,
+          "mean_box_hit_fraction": 0.9305555555555555,
+          "mean_ink_inside_target_boxes": 0.5155753182903463
+        }
+      }
+    },
+    "localization": {
+      "correct": 41,
+      "center_mean": 0.19283271213792716,
+      "center_median": 0.2454771408677364,
+      "iou_mean": 0.3594172653756427,
+      "iou_median": 0.07227127355897872
+    }
+  },
+  "object_protocol": "12 fixed labels; highest-mixture-weight component mean for greedy drawing",
+  "scene_protocol": "Four fixed scene comparisons; reference, step50021, final54825",
+  "text_cases": [
+    {
+      "prompt": "Once upon a time, there was a little cat named Tom.",
+      "generated_page_texts": {
+        "0": "Once upon a time, there was a little cat named Tom.",
+        "1": "Tom was very big and had lots of toys.",
+        "2": "He was very happy and loved playing with blocd.",
+        "3": "One sunny day, being a hunter came to the kitch",
+        "4": "anbulance to help ; he was so excited"
+      },
+      "conditioning": "typed_text",
+      "feedback": "canonical_font_to_frozen_E",
+      "future_reference_used": false,
+      "constraint": "shape_prefix",
+      "rendering": "existing_word_wrap_and_ink_alignment_on_current_symbolic_prefix",
+      "beam_width": 1,
+      "stop_reason": "max_new_strokes",
+      "generated_strokes": 241,
+      "source_record": "readout0.json"
+    },
+    {
+      "prompt": "Once upon a time, there was a little dog named Max.",
+      "generated_page_texts": {
+        "0": "Once upon a time, there was a little dog named Max.",
+        "1": "Max was very big and had lots of his toys.",
+        "2": "One sunny more his toys were his best friend, a",
+        "3": "lady named Max. Max was a little boy who loved",
+        "4": "to play when by his toys. One day, Max wa"
+      },
+      "conditioning": "typed_text",
+      "feedback": "canonical_font_to_frozen_E",
+      "future_reference_used": false,
+      "constraint": "shape_prefix",
+      "rendering": "existing_word_wrap_and_ink_alignment_on_current_symbolic_prefix",
+      "beam_width": 1,
+      "stop_reason": "max_new_strokes",
+      "generated_strokes": 241,
+      "source_record": "readout1.json"
+    },
+    {
+      "prompt": "Lily was hungry. She went to the kitchen to get",
+      "generated_page_texts": {
+        "0": "Lily was hungry. She went to the kitchen to get",
+        "1": "dressed and bow and had a hole in bowl.",
+        "2": "Sboth was very big and had a hol every week.",
+        "3": "Sbotb was very big and had a lot of toys.",
+        "4": "Sbotb wanted to have fun ; her mom said \"Let's",
+        "5": "go on an"
+      },
+      "conditioning": "typed_text",
+      "feedback": "canonical_font_to_frozen_E",
+      "future_reference_used": false,
+      "constraint": "shape_prefix",
+      "rendering": "existing_word_wrap_and_ink_alignment_on_current_symbolic_prefix",
+      "beam_width": 1,
+      "stop_reason": "max_new_strokes",
+      "generated_strokes": 241,
+      "source_record": "readout2.json"
+    },
+    {
+      "prompt": "Tom dropped his toy into the lake. He felt",
+      "generated_page_texts": {
+        "1": "He felt so bad ; but he had a big hat ; but before",
+        "2": "bed, he was also happy. He was no tired.",
+        "3": "He was so eager to see the hat.",
+        "4": "He was so eager to see the hat.",
+        "5": "He was so eager to see the hat.",
+        "6": "He was so eager"
+      },
+      "conditioning": "typed_text",
+      "feedback": "canonical_font_to_frozen_E",
+      "future_reference_used": false,
+      "constraint": "shape_prefix",
+      "rendering": "existing_word_wrap_and_ink_alignment_on_current_symbolic_prefix",
+      "beam_width": 1,
+      "stop_reason": "max_new_strokes",
+      "generated_strokes": 241,
+      "source_record": "readout3.json"
+    }
+  ],
+  "figure_sha256": {
+    "docs/media/gmm_objects_20261026.png": "712c9cd401a90ab26e8a99c357b4035313ba41f32ac615b088a9e9594a11526f",
+    "docs/media/gmm_object_progress_20261026.png": "b72e45e887a68cfcceb52a14a8af77739b2dc85fa31595d6ba60541621544fdb",
+    "docs/media/gmm_scene_progress_20261026.png": "e15526bac01a0d247b37966c7f964cc7d46ff0aba8923f04813c86f7f795b828"
+  }
+}

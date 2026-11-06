@@ -1,5 +1,9 @@
 # Fixed generated examples
 
+This page shows the current diffusion stage. The separate
+[historical GMM gallery](historical_gmm.md) contains earlier object and scene
+drawings, checkpoint comparisons, and auxiliary-readout text continuations.
+
 ![Eight task examples](media/eight_tasks.png)
 
 This is the unedited first preselected example from each of the eight task

@@ -2,7 +2,7 @@
 
 **Generative learning over written and graphical strokes.**
 
-An ongoing personal research project exploring human paper-and-pen expression
+An ongoing personal research project, begun in July 2026, exploring paper-and-pen expression
 as a learning medium. Writing, drawings, spatial layout, and operations such as
 circling are represented through a common sequence of strokes.
 
@@ -10,6 +10,8 @@ This work extends [the original CoSE](https://github.com/eth-ait/cose). A stroke
 autoencoder encodes both shape and absolute canvas position into a continuous
 48-dimensional latent; a progress-conditioned decoder reconstructs the curve.
 The current page-based prior is a 100.1M-parameter block-causal diffusion model.
+The repository also preserves an earlier GMM autoregressive stage and its
+recorded drawing and text demonstrations.
 
 ## What is being explored
 
@@ -28,20 +30,29 @@ flowchart LR
     E --> F[Written or graphical strokes]
 ```
 
-## Evidence from the current prototype
+## Historical autoregressive demonstrations
+
+![Twelve fixed-label drawings from the historical GMM model](docs/media/gmm_objects_20261026.png)
+
+These are raw generated strokes from the 2026-10-26 GMM model, with all twelve
+fixed labels retained. The [historical gallery](docs/historical_gmm.md) includes
+same-prompt checkpoint comparisons, scene drawings and four complete text
+continuations. Historical text uses auxiliary shape/space heads and
+canonical-font feedback; the GMM drawing and current diffusion paths are
+documented separately.
+
+## Current diffusion prototype
 
 After one billion additional successful inputs, circle-selection accuracy
 increased from **41.0% to 50.8% on 512 paired synthetic scenes**. The paired
 increase is 9.8 percentage points, with a recorded 95% interval of 6.0 to 13.3.
 Conditional-use and generated-history diagnostics are in [results](docs/results.md).
 
-![First preselected example from each of eight tasks](docs/media/eight_tasks.png)
-
-The panel retains the first preselected example for every task from the
-recorded evaluation, including incorrect names and selections. Gray strokes
-are provided context, blue strokes are generated; the orange circle in S5 is
-part of its input. Longer text, object structure, and visual correspondence
-remain limited. See the [gallery caption](docs/gallery.md) for provenance.
+The [eight-task diffusion panel](docs/gallery.md) retains the first preselected
+example from every task, including incorrect names and selections. Longer text,
+object structure, and visual correspondence remain limited. The historical
+gallery shows earlier results; the diffusion panel shows the current research
+stage, each with its own procedure and provenance.
 
 Current work rebalances task contributions and mixes 4/8/16-stroke blocks.
 The published measurements above precede that stage; its capability results

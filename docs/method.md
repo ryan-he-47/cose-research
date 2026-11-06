@@ -1,5 +1,10 @@
 # Stroke representation and page diffusion
 
+The current prior is block diffusion. An earlier stage used a GMM
+autoregressive prior with auxiliary text heads and a canonical-font feedback
+path. Its [method-specific demonstrations](historical_gmm.md) are preserved
+alongside the current diffusion examples.
+
 The current autoencoder maps a variable-length stroke's geometry and absolute
 canvas position into a 48-dimensional latent. The encoder is width 192 with
 6 layers and 6 heads. The decoder uses continuous progress tau with FiLM and

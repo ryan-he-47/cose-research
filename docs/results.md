@@ -1,5 +1,9 @@
 # Recorded prototype results
 
+Earlier GMM autoregressive drawing, text and task measurements are preserved
+in the [historical stage report](historical_gmm.md). The measurements below
+refer to the subsequent diffusion stage.
+
 ## Additional training
 
 The no-auxiliary diffusion model first completed 360,000,013 successful inputs.

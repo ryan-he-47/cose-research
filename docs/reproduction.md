@@ -1,5 +1,11 @@
 # Reproduction and asset status
 
+For the earlier GMM stage, start with `configs/r_joint_scratch_20261022.json`,
+`src/st/pretrain_model.py` and the existing generation/text-readout modules.
+`python -m scripts.demo.demo_pretrain_generation --help` lists the generation
+entry point. The [historical gallery](historical_gmm.md) records the actual
+checkpoint and readout protocol; those weights are not yet bundled or hosted.
+
 Install `requirements.txt`, then run `python scripts/check_release.py` from the
 repository root. `python -m scripts.checks.check_page_diffusion` is the preserved
 synthetic CPU check for future/clean-target isolation, clean KV equivalence,

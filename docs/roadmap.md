@@ -2,6 +2,9 @@
 
 Snapshot date: 2026-11-06.
 
+The personal research began in July 2026. The [historical GMM stage](historical_gmm.md)
+includes object drawings, scene generation and auxiliary-readout text samples.
+
 Completed: the frozen stroke AE; eight-task page pipeline; 100.1M no-auxiliary
 diffusion training; one-billion-input continuation; fixed-task, conditional-use
 and generated-history diagnostics.
