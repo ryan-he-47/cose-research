@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this research software, cite this software record."
+type: software
+title: "CoSE Research: Generative Learning over Written and Graphical Strokes"
+authors:
+  - name: "HE Yi"
+version: 0.1.0
+date-released: 2026-11-06
+license: GPL-3.0-only

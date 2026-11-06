@@ -1,0 +1,11 @@
+{
+  "font_path": "datasets/vector_fonts/relief/ReliefSingleLineSVG-Regular.svg",
+  "raw_dir": "datasets/quickdraw_345_raw_1000",
+  "max_stories": 20000,
+  "max_per_class": 1000,
+  "seed": 42,
+  "augment_text": true,
+  "include_scenes": true,
+  "split": "train",
+  "validation_fraction": 0.02
+}

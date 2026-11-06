@@ -1,0 +1,13 @@
+{
+  "kind": "successful_step_cosine",
+  "start_step": 40000,
+  "end_step": 55000,
+  "start_lr": 0.0001,
+  "end_lr": 0.000005,
+  "reference": {
+    "decision_date": "2026-10-07",
+    "checkpoint": "ae_lambda48_dct_tau_film_20261006/ckpt_0040000.pt",
+    "additional_successful_updates": 15000,
+    "successful_input_strokes": 61440000
+  }
+}

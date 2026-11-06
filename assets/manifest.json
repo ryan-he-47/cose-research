@@ -1,0 +1,14 @@
+{
+  "public_downloads_available": false,
+  "frozen_ae": {
+    "latent_dimensions": 48,
+    "release_status": "not_published",
+    "download_url": null
+  },
+  "prior": {
+    "parameters": 100108592,
+    "cumulative_successful_inputs": 1360000017,
+    "release_status": "not_published",
+    "download_url": null
+  }
+}

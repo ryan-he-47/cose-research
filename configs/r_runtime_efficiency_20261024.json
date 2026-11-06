@@ -1,0 +1,5 @@
+{
+  "prepare_updates": true,
+  "encoder_length_buckets": [16, 32, 48, 64, 76],
+  "cache_validation_embeddings": true
+}

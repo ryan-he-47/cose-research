@@ -1,0 +1,17 @@
+{
+  "recorded_date": "2026-11-05",
+  "development_commit": "bd8dd8c89d644af31e2515900afa5f1b1663f294",
+  "successful_inputs_before": 360000013,
+  "successful_inputs_after": 1360000017,
+  "circle_selection": {
+    "scenes": 512,
+    "before_percent": 41.0,
+    "after_percent": 50.8,
+    "paired_difference_pp": 9.8,
+    "paired_95_interval_pp": [
+      6.0,
+      13.3
+    ]
+  },
+  "capability_results_for_rebalanced_stage_available": false
+}

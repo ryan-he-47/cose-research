@@ -1,0 +1,6 @@
+{
+  "workers": 8,
+  "microbatch_documents": 512,
+  "prefetch_documents": {"T1": 8, "O1": 512, "O2": 256, "S1": 32, "S2": 64, "S3": 16, "S4": 16, "S5": 16},
+  "prepare_batch_documents": {"T1": 2, "O1": 32, "O2": 16, "S1": 4, "S2": 8, "S3": 4, "S4": 4, "S5": 4}
+}

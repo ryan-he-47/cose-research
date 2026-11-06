@@ -1,0 +1,23 @@
+{
+  "version": "2026-10-09-approved-corrective",
+  "total_inputs": 200000000,
+  "input_budget": 65536,
+  "microbatch_documents": 128,
+  "padded_stroke_budget": 32768,
+  "encode_chunk_size": 1024,
+  "activation_checkpoint": false,
+  "workers": 4,
+  "max_points": 76,
+  "memory_headroom_gib": 6,
+  "sigma_eps_r": 0.01,
+  "peak_lr": 0.0001,
+  "min_lr": 0.00001,
+  "warmup_inputs": 8000000,
+  "decay_inputs": 8000000,
+  "clip_norm": 1.0,
+  "control_weight": 0.05,
+  "input_shares": {"T1":0.20,"O1":0.30,"O2":0.15,"S1":0.08,"S2":0.18,"S3":0.03,"S4":0.03,"S5":0.03},
+  "loss_weights": {"T1":0.08,"O1":0.45,"O2":0.15,"S1":0.03,"S2":0.20,"S3":0.02,"S4":0.05,"S5":0.02},
+  "seed": 42,
+  "save_seconds": 3600
+}

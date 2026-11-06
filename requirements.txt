@@ -1,0 +1,12 @@
+# CoSE 活跃栈依赖（2026-10-01 按 src/ 与 scripts/ 实际导入补齐）
+# 使用项目解释器执行：python -m pip install -r requirements.txt
+# Tk GUI 另需解释器自带 tkinter；本机 cose2 已具备。
+
+torch>=2.0.0
+numpy>=1.24.0
+scipy>=1.10.0
+matplotlib>=3.7.0
+tqdm>=4.65.0
+scikit-learn>=1.0.0
+flask>=3.0.0
+pyarrow>=14.0.0
